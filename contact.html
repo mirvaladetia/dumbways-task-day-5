@@ -3,7 +3,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <title>Contact Me</title>
   </head>
 
@@ -14,18 +22,29 @@
           <li>
             <img src="image/gensin.png" style="border-radius: 15px;" alt="" />
           </li>
-          <li>
+          <li class="item-collapse">
             <a class="active" href="index.html">Home</a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="blog.html">List</a>
           </li>
         </ul>
       </div>
-      <div class="nav-right">
+      <div class="nav-right item-collapse">
         <a href="contact.html">Contact Me</a>
       </div>
+      <div class="nav-right" id="barsmenu">
+        <button style="background-color: transparent; border: none; cursor: pointer"
+        onclick="openHamburger()">
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">List</a>
+      <a href="contact.html" class="hamburger-active">Contact Me</a>
+    </div>
     <h2>GET IN TOUCH</h2>
     <form>
       <div>
@@ -62,6 +81,7 @@
         <button type="button" onclick="ngumpulindata()">Submit</button>
       </div>
     </form>
-    <script src="indeks.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
